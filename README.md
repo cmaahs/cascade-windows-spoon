@@ -4,13 +4,13 @@ A Hammerspoon Spoon module to handle cascading open windows for an application.
 
 ## What do I use this for
 
-Like most tools that I create, this one helps me get back to the window I'm looking for, which is usually burried under a thousand windows in a thousand tabs... I ran across what I felt was a fairly easy to understand structure for a Hammerspoon Spoon in [miro-windows-manager](https://github.com/miromannino/miro-windows-manager), and from that I started playing around.  I had implemented this as an AppleScript/Automator process back in the day, though evolution of MacOS has not been a friend to that process.  In any case, on to the purpose and usage of this Spoon.  
+Like most tools that I create, this one was made specifically for me, though it could potentially be useful for others.  It helps me get back to the window I'm looking for, which is usually burried under a thousand windows in a thousand tabs... I ran across what I felt was a fairly easy to understand structure for a Hammerspoon Spoon in [miro-windows-manager](https://github.com/miromannino/miro-windows-manager), and from that I started playing around.  I had implemented this as an AppleScript/Automator process back in the day, though evolution of MacOS has not been a friend to that process.  In any case, on to the purpose and usage of this Spoon.  
 
 Especially with browser windows, I find it much easier to locate what I'm looking for if I can read the TAB titles for the window.  Doing a traditional `cascade` of the windows allows me to see all of the TAB titles at once.  At which point I can bring that window to the foreground and use miro-windows-manager functionality to position that window however I would like. Clearly only useful for applications that can spawn multiple windows.  With this spoon you define a key command to each application you would like to cascade and give it some plot points, offset, and screen to move it to, and good to go.
 
 ## Installation
 
-This will create a ~/tmp temp file in your home directory and clone the repository into it, then move the Spoon to the ~/.hammerspoon/Spoons install directory.  Then add the base loading lines into your ~/.hammerspoon/init.lua file.  Once complete you can clean up the ~/tmp/miro-windows-manager directory as you see fit.
+This will create a ~/tmp temp file in your home directory and clone the repository into it, then move the Spoon to the ~/.hammerspoon/Spoons install directory.  Then add the base loading lines into your ~/.hammerspoon/init.lua file.  Once complete you can clean up the ~/tmp/cascade-windows-spoon directory as you see fit.
 
 ```bash
 mkdir ~/tmp
