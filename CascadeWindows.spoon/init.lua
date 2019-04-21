@@ -33,6 +33,9 @@ obj.author = "Christopher Maahs <cmaahs@gmail.com>"
 obj.homepage = "https://github.com/cmaahs/cascade-windows-spoon"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
 
+--- CascadeWindows.logger
+--- Variable
+--- Accessible variable to adjust the logging level
 local logger = hs.logger.new(obj.name)
 obj._logger = logger
 logger.i("Loading ".. obj.name)
@@ -41,7 +44,7 @@ logger.i("Loading ".. obj.name)
 -- ## Public variables
 
 -- Comment: Lots of work here to save users a little work. Previous versions required users to call
--- MiroWindowsManager:start() every time they changed GRID. The metatable work here watches for those changes and does the work :start() would have done.
+-- CascadeWindows:start() every time they changed GRID. The metatable work here watches for those changes and does the work :start() would have done.
 package.path = package.path..";Spoons/".. ... ..".spoon/?.lua"
 
 -- ## Internal
@@ -57,8 +60,10 @@ end
 -- ### Utilities
 
 -- ## Public
--- spoon.CascadeWindows._logger.level = 3
--- spoon.CascadeWindows:DisplayScreenInfo()
+
+--- CascadeWindows:DisplayScreenInfo
+--- Method
+--- Expose a routine to allow the user to show attached screens and their resolution.
 function obj:DisplayScreenInfo()
   local screens = hs.screen.allScreens()
   for _, newScreen in ipairs(screens) do
@@ -68,6 +73,9 @@ function obj:DisplayScreenInfo()
   end
 end
 
+--- CascadeWindows:cascade(appinfo)
+--- Method
+--- Cascade windows identified in the passed in argument
 function obj:cascade(appinfo)
   -- layout stacked apps
     local numberWindows = 0
@@ -113,7 +121,7 @@ end
 
 obj.hotkeys = {}
 
---- MiroWindowsManager:bindHotkeys()
+--- CascadeWindows:bindHotkeys()
 --- Method
 --- Binds hotkeys for CacadeWindows
 ---
@@ -132,6 +140,7 @@ obj.hotkeys = {}
 ---  s = { keys = {hyper, "s"}, app = 'Sublime Text', start = { 790, 0, 1920, 1360 }, offset = { 30, 30 }, screen = 'DELL U3818DW'},
 --- })
 --- spoon.CascadeWindows._logger.level = 3
+--- spoon.CascadeWindows:DisplayScreenInfo()
 --- ```
 ---
 function obj:bindHotkeys(applist)
@@ -147,7 +156,7 @@ function obj:bindHotkeys(applist)
 
 end
 
---- MiroWindowsManager:init()
+--- CascadeWindows:init()
 --- Method
 --- Currently does nothing (implemented so that treating this Spoon like others won't cause errors).
 function obj:init()
