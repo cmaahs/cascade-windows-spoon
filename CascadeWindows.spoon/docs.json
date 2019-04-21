@@ -1,0 +1,270 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "doc" : "Accessible variable to adjust the logging level",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Accessible variable to adjust the logging level"
+        ],
+        "desc" : "Accessible variable to adjust the logging level",
+        "notes" : [
+
+        ],
+        "signature" : "CascadeWindows.logger",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "logger",
+        "def" : "CascadeWindows.logger"
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "desc" : "With this Spoon you will be able to target a specific application (Google Chrome, iTerm2, Sublime Text) and assign a hyper key to cascade the open windows.",
+    "Constructor" : [
+
+    ],
+    "doc" : "With this Spoon you will be able to target a specific application (Google Chrome, iTerm2, Sublime Text) and assign a hyper key to cascade the open windows.\nOfficial homepage for more info and documentation:\n[https:\/\/github.com\/cmaahs\/cascade-windows-spoon](https:\/\/github.com\/cmaahs\/cascade-windows-spoon)",
+    "Method" : [
+      {
+        "doc" : "Expose a routine to allow the user to show attached screens and their resolution.",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Expose a routine to allow the user to show attached screens and their resolution."
+        ],
+        "desc" : "Expose a routine to allow the user to show attached screens and their resolution.",
+        "notes" : [
+
+        ],
+        "signature" : "CascadeWindows:DisplayScreenInfo",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "DisplayScreenInfo",
+        "def" : "CascadeWindows:DisplayScreenInfo"
+      },
+      {
+        "doc" : "Cascade windows identified in the passed in argument",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Cascade windows identified in the passed in argument"
+        ],
+        "desc" : "Cascade windows identified in the passed in argument",
+        "notes" : [
+
+        ],
+        "signature" : "CascadeWindows:cascade(appinfo)",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "cascade",
+        "def" : "CascadeWindows:cascade(appinfo)"
+      },
+      {
+        "doc" : "Binds hotkeys for CacadeWindows\n\nParameters:\n * applist - A table containing hotkey details for defined applications:\n\nA configuration example:\n``` lua\nlocal hyper = {\"ctrl\", \"alt\", \"cmd\"}\nhs.loadSpoon(\"CascadeWindows\")\nstart { x, y, w, h } and offset { x, y }\noffset represents each new windows's starting position (upper left) in relation to the `start` position (x,y)\nspoon.CascadeWindows:bindHotkeys({\n g = { keys = {hyper, \"g\"}, app = 'Google Chrome', start = { 290, 0, 1600, 900 }, offset = { 75, 40 }, screen = 'DELL U3818DW'},\n i = { keys = {hyper, \"i\"}, app = 'iTerm2', start = { 790, 0, 1920, 1360 }, offset = { 30, 30 }, screen = 'DELL U3818DW'},\n s = { keys = {hyper, \"s\"}, app = 'Sublime Text', start = { 790, 0, 1920, 1360 }, offset = { 30, 30 }, screen = 'DELL U3818DW'},\n})\nspoon.CascadeWindows._logger.level = 3\nspoon.CascadeWindows:DisplayScreenInfo()\n```",
+        "parameters" : [
+          " * applist - A table containing hotkey details for defined applications:",
+          "",
+          "A configuration example:",
+          "``` lua",
+          "local hyper = {\"ctrl\", \"alt\", \"cmd\"}",
+          "hs.loadSpoon(\"CascadeWindows\")",
+          "start { x, y, w, h } and offset { x, y }",
+          "offset represents each new windows's starting position (upper left) in relation to the `start` position (x,y)",
+          "spoon.CascadeWindows:bindHotkeys({",
+          " g = { keys = {hyper, \"g\"}, app = 'Google Chrome', start = { 290, 0, 1600, 900 }, offset = { 75, 40 }, screen = 'DELL U3818DW'},",
+          " i = { keys = {hyper, \"i\"}, app = 'iTerm2', start = { 790, 0, 1920, 1360 }, offset = { 30, 30 }, screen = 'DELL U3818DW'},",
+          " s = { keys = {hyper, \"s\"}, app = 'Sublime Text', start = { 790, 0, 1920, 1360 }, offset = { 30, 30 }, screen = 'DELL U3818DW'},",
+          "})",
+          "spoon.CascadeWindows._logger.level = 3",
+          "spoon.CascadeWindows:DisplayScreenInfo()",
+          "```"
+        ],
+        "stripped_doc" : [
+          "Binds hotkeys for CacadeWindows",
+          ""
+        ],
+        "desc" : "Binds hotkeys for CacadeWindows",
+        "notes" : [
+
+        ],
+        "signature" : "CascadeWindows:bindHotkeys()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "bindHotkeys",
+        "def" : "CascadeWindows:bindHotkeys()"
+      },
+      {
+        "doc" : "Currently does nothing (implemented so that treating this Spoon like others won't cause errors).",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Currently does nothing (implemented so that treating this Spoon like others won't cause errors)."
+        ],
+        "desc" : "Currently does nothing (implemented so that treating this Spoon like others won't cause errors).",
+        "notes" : [
+
+        ],
+        "signature" : "CascadeWindows:init()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "init",
+        "def" : "CascadeWindows:init()"
+      }
+    ],
+    "Field" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Accessible variable to adjust the logging level",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Accessible variable to adjust the logging level"
+        ],
+        "desc" : "Accessible variable to adjust the logging level",
+        "notes" : [
+
+        ],
+        "signature" : "CascadeWindows.logger",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "logger",
+        "def" : "CascadeWindows.logger"
+      },
+      {
+        "doc" : "Expose a routine to allow the user to show attached screens and their resolution.",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Expose a routine to allow the user to show attached screens and their resolution."
+        ],
+        "desc" : "Expose a routine to allow the user to show attached screens and their resolution.",
+        "notes" : [
+
+        ],
+        "signature" : "CascadeWindows:DisplayScreenInfo",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "DisplayScreenInfo",
+        "def" : "CascadeWindows:DisplayScreenInfo"
+      },
+      {
+        "doc" : "Binds hotkeys for CacadeWindows\n\nParameters:\n * applist - A table containing hotkey details for defined applications:\n\nA configuration example:\n``` lua\nlocal hyper = {\"ctrl\", \"alt\", \"cmd\"}\nhs.loadSpoon(\"CascadeWindows\")\nstart { x, y, w, h } and offset { x, y }\noffset represents each new windows's starting position (upper left) in relation to the `start` position (x,y)\nspoon.CascadeWindows:bindHotkeys({\n g = { keys = {hyper, \"g\"}, app = 'Google Chrome', start = { 290, 0, 1600, 900 }, offset = { 75, 40 }, screen = 'DELL U3818DW'},\n i = { keys = {hyper, \"i\"}, app = 'iTerm2', start = { 790, 0, 1920, 1360 }, offset = { 30, 30 }, screen = 'DELL U3818DW'},\n s = { keys = {hyper, \"s\"}, app = 'Sublime Text', start = { 790, 0, 1920, 1360 }, offset = { 30, 30 }, screen = 'DELL U3818DW'},\n})\nspoon.CascadeWindows._logger.level = 3\nspoon.CascadeWindows:DisplayScreenInfo()\n```",
+        "parameters" : [
+          " * applist - A table containing hotkey details for defined applications:",
+          "",
+          "A configuration example:",
+          "``` lua",
+          "local hyper = {\"ctrl\", \"alt\", \"cmd\"}",
+          "hs.loadSpoon(\"CascadeWindows\")",
+          "start { x, y, w, h } and offset { x, y }",
+          "offset represents each new windows's starting position (upper left) in relation to the `start` position (x,y)",
+          "spoon.CascadeWindows:bindHotkeys({",
+          " g = { keys = {hyper, \"g\"}, app = 'Google Chrome', start = { 290, 0, 1600, 900 }, offset = { 75, 40 }, screen = 'DELL U3818DW'},",
+          " i = { keys = {hyper, \"i\"}, app = 'iTerm2', start = { 790, 0, 1920, 1360 }, offset = { 30, 30 }, screen = 'DELL U3818DW'},",
+          " s = { keys = {hyper, \"s\"}, app = 'Sublime Text', start = { 790, 0, 1920, 1360 }, offset = { 30, 30 }, screen = 'DELL U3818DW'},",
+          "})",
+          "spoon.CascadeWindows._logger.level = 3",
+          "spoon.CascadeWindows:DisplayScreenInfo()",
+          "```"
+        ],
+        "stripped_doc" : [
+          "Binds hotkeys for CacadeWindows",
+          ""
+        ],
+        "desc" : "Binds hotkeys for CacadeWindows",
+        "notes" : [
+
+        ],
+        "signature" : "CascadeWindows:bindHotkeys()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "bindHotkeys",
+        "def" : "CascadeWindows:bindHotkeys()"
+      },
+      {
+        "doc" : "Cascade windows identified in the passed in argument",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Cascade windows identified in the passed in argument"
+        ],
+        "desc" : "Cascade windows identified in the passed in argument",
+        "notes" : [
+
+        ],
+        "signature" : "CascadeWindows:cascade(appinfo)",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "cascade",
+        "def" : "CascadeWindows:cascade(appinfo)"
+      },
+      {
+        "doc" : "Currently does nothing (implemented so that treating this Spoon like others won't cause errors).",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Currently does nothing (implemented so that treating this Spoon like others won't cause errors)."
+        ],
+        "desc" : "Currently does nothing (implemented so that treating this Spoon like others won't cause errors).",
+        "notes" : [
+
+        ],
+        "signature" : "CascadeWindows:init()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "init",
+        "def" : "CascadeWindows:init()"
+      }
+    ],
+    "Command" : [
+
+    ],
+    "name" : "CascadeWindows"
+  }
+]
