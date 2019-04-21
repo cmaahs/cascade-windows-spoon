@@ -39,11 +39,11 @@ then
 else
     echo 'hs.window.animationDuration = 0.3' >> ~/.hammerspoon/init.lua
 fi
-if grep -Fxq 'spoon.CascadeWindows:bindHotkeys({ g = { keys = {hyper, "g"}, app = 'Google Chrome', start = { 0, 0, 1200, 700 }, offset = { 75, 40 }, screen = 'Color LCD'}, i = { keys = {hyper, "i"}, app = 'iTerm2', start = { 250, 0, 600, 500 }, offset = { 30, 30 }, screen = 'Color LCD'}, s = { keys = {hyper, "s"}, app = 'Sublime Text', start = { 250, 0, 700, 650 }, offset = { 30, 30 }, screen = 'Color LCD'},})' ~/.hammerspoon/init.lua
+if grep -Fxq 'spoon.CascadeWindows:bindHotkeys({ g = { keys = {hyper, "g"}, app = "Google Chrome", start = { 0, 0, 1200, 700 }, offset = { 75, 40 }, screen = "Color LCD"}, i = { keys = {hyper, "i"}, app = "iTerm2", start = { 250, 0, 600, 500 }, offset = { 30, 30 }, screen = "Color LCD"}, s = { keys = {hyper, "s"}, app = "Sublime Text", start = { 250, 0, 700, 650 }, offset = { 30, 30 }, screen = "Color LCD"},})' ~/.hammerspoon/init.lua
 then
     echo "line already exists."
 else
-    echo 'spoon.CascadeWindows:bindHotkeys({ g = { keys = {hyper, "g"}, app = 'Google Chrome', start = { 0, 0, 1200, 700 }, offset = { 75, 40 }, screen = 'Color LCD'}, i = { keys = {hyper, "i"}, app = 'iTerm2', start = { 250, 0, 600, 500 }, offset = { 30, 30 }, screen = 'Color LCD'}, s = { keys = {hyper, "s"}, app = 'Sublime Text', start = { 250, 0, 700, 650 }, offset = { 30, 30 }, screen = 'Color LCD'},})' >> ~/.hammerspoon/init.lua
+    echo 'spoon.CascadeWindows:bindHotkeys({ g = { keys = {hyper, "g"}, app = "Google Chrome", start = { 0, 0, 1200, 700 }, offset = { 75, 40 }, screen = "Color LCD"}, i = { keys = {hyper, "i"}, app = "iTerm2", start = { 250, 0, 600, 500 }, offset = { 30, 30 }, screen = "Color LCD"}, s = { keys = {hyper, "s"}, app = "Sublime Text", start = { 250, 0, 700, 650 }, offset = { 30, 30 }, screen = "Color LCD"},})' >> ~/.hammerspoon/init.lua
 fi
 if grep -Fxq 'spoon.CascadeWindows._logger.level = 3' ~/.hammerspoon/init.lua
 then
