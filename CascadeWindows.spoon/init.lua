@@ -95,7 +95,7 @@ function obj:cascade(appinfo)
           end
 
           if appinfo.screen then
-            whichscreen = scrn(appinfo.screen)
+            whichscreen = getscreen(appinfo.screen)
             if whichscreen then
               if win:screen():id() ~= whichscreen:id() then
                 win:moveToScreen(whichscreen)
